@@ -1,6 +1,6 @@
 # UUID4
 
-A drop-in two files library to generate version 4 UUIDs.
+A drop-in two files library to generate version 4 UUIDs, by [Grégory Pakosz](https://api.github.com/users/gpakosz).
 
 ⚠ The underlying PRNG is SplitMix which makes UUIDs produced by this library
 trivially predictable. But if you're willing to generate secure "tokens", that's
@@ -29,6 +29,32 @@ Just drop `uuid4.h` and `uuid4.c` into your build and get started. (see also
 
 --------------------------------------------------------------------------------
 
+
+## Installation
+
+Run:
+```bash
+$ npm i uuid4.c
+```
+
+And then include `uuid4.h` as follows:
+```c
+#include "node_modules/uuid4.c/src/uuid4.h"
+```
+
+You may also want to include `uuid4.c` as follows:
+```c
+#ifndef __UUID4_C__
+#define __UUID4_C__
+#include "node_modules/uuid4.c/src/uuid4.c"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
+
+--------------------------------------------------------------------------------
+
+
 ## Usage
 
 - `uuid4_seed()` seeds the version 4 UUID generator.
@@ -37,7 +63,7 @@ Just drop `uuid4.h` and `uuid4.c` into your build and get started. (see also
 
 Example usage:
 
-```
+```c
 #include <stdio.h>
 #include <uuid4.h>
 
@@ -114,3 +140,10 @@ If you find this library useful and decide to use it in your own projects please
 drop me a line [@gpakosz].
 
 [@gpakosz]: https://twitter.com/gpakosz
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/uuid4.c)

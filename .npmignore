@@ -1,0 +1,7 @@
+_gnu-make/
+_ios-xcode/
+_mac-xcode/
+_win-vs14/
+.github/
+example/
+.gitattributes

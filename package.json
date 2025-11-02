@@ -1,0 +1,15 @@
+{
+  "name": "uuid4.c",
+  "version": "1.2021.10",
+  "description": "UUID v4 generation in C; Grégory Pakosz (2019).",
+  "keywords": ["c", "library", "uuid", "uuid4", "uuid v4", "guid", "guid4", "guid v4"],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/uuid4.c.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodef/uuid4.c/issues"
+  },
+  "homepage": "https://github.com/nodef/uuid4.c#readme"
+}
